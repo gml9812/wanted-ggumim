@@ -6,7 +6,11 @@ import * as S from './style';
 export function FurnitureImage({ info, focused, onClick }) {
   return (
     <S.Container focused={focused}>
-      <S.Slide image={info.imageUrl} focused={focused} onClick={() => onClick(info.productId)}>
+      <S.Slide
+        image={info.imageUrl}
+        focused={focused}
+        onClick={() => (focused ? onClick('') : onClick(info.productId))}
+      >
         {info.discountRate > 0 && (
           <S.DiscountBadge>
             {info.discountRate}

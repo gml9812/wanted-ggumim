@@ -1,6 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import { FurnitureInfo } from 'components/atoms/FurnitureInfo';
+import { FurnitureInfo } from 'components';
 
 import * as S from './style';
 
