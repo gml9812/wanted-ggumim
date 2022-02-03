@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { STYLE } from 'constants';
 
 export const Container = styled.div`
   line-height: 1.42857143;
@@ -13,5 +14,5 @@ export const Container = styled.div`
 `;
 
 export const BackGroundImage = styled.img`
-  width: 800px;
+  width: ${STYLE.VIEWER.BACKGROUND_IMAGE_WIDTH}px;
 `;

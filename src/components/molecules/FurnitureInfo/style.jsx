@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { STYLE } from 'constants';
 
 export const Container = styled.div`
   box-sizing: border-box;
@@ -33,17 +34,14 @@ export const Tooltip = styled.span`
   align-items: center;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.95);
-  width: 220px;
-  height: 86px;
+  width: ${STYLE.VIEWER.TOOLTIP.WIDTH}px;
+  height: ${STYLE.VIEWER.TOOLTIP.HEIGHT}px;
   padding: 8px 0 8px 8px;
   margin-top: 16px;
   border-radius: 7px;
   box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.2);
   font-size: 14px;
   color: #4a4a4a;
-  left: -160px;
-  top: unset;
-  bottom: 52px;
   ${(props) =>
     props.atTop
       ? `top: 28px; 
@@ -77,8 +75,8 @@ export const Tooltip = styled.span`
 
 export const TooltipImage = styled.div`
   flex-shrink: 0;
-  width: 70px;
-  height: 70px;
+  width: ${STYLE.VIEWER.TOOLTIP.IMAGE.WIDTH}px;
+  height: ${STYLE.VIEWER.TOOLTIP.IMAGE.HEIGHT}px;
   margin-right: 8px;
   background-size: cover;
   background-position: center;

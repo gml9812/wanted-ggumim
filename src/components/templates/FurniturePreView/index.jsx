@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FurnitureViewer, FurnitureImageSlider } from 'components';
+import { MESSAGE } from 'constants';
 
 export function FurniturePreView() {
   const [furnitureData, setFurnitureData] = useState({
@@ -11,13 +12,15 @@ export function FurniturePreView() {
 
   useEffect(() => {
     const fetchData = async () => {
-      // 에러 관리 추가하기.
       try {
-        const response = await fetch('http://localhost:3000/data/data.json'); // http://localhost:3000/data/data.json http://cdn.ggumim.co.kr/test/image_product_link.json
+        const response = await fetch('http://localhost:3000/data/data.json'); // http://cdn.ggumim.co.kr/test/image_product_link.json
+        if (response.status > 400) {
+          throw new Error(MESSAGE.SERVER_REQUEST_FAIL);
+        }
         const json = await response.json();
         setFurnitureData(json);
       } catch (error) {
-        console.log('error', error);
+        console.log(MESSAGE.SERVER_NOT_RESPONDING, error);
       }
     };
     fetchData();

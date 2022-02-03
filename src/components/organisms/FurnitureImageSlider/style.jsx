@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { STYLE } from 'constants';
 
 export const Container = styled.div`
   -webkit-text-size-adjust: 100%;
@@ -21,7 +22,7 @@ export const Container = styled.div`
   overflow-y: hidden;
   overflow-x: auto;
 
-  width: 800px;
+  width: ${STYLE.IMAGE_SLIDER.WIDTH}px;
 `;
 
 export const SliderWrapper = styled.div`
