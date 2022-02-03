@@ -13,7 +13,7 @@ export function FurniturePreView() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3000/data/data.json'); // http://cdn.ggumim.co.kr/test/image_product_link.json
+        const response = await fetch('http://cdn.ggumim.co.kr/test/image_product_link.json');
         if (response.status > 400) {
           throw new Error(MESSAGE.SERVER_REQUEST_FAIL);
         }
