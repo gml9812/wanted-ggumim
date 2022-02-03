@@ -26,7 +26,8 @@
       "plugin:cypress/recommended"
     ],
     "rules": {
-      "import/prefer-default-export": "off"
+      "import/prefer-default-export": "off",
+      "no-console": "off"
     },
     "settings": {
       "import/resolver": {
