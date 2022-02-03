@@ -1,2 +1,3 @@
-export { COLOR, LAYOUT, Z_INDEX } from './constantForA';
-export { ROUTE } from './constantForB';
+export { MESSAGE } from './message';
+export { STYLE } from './style';
+export { IMAGE_SLIDER } from './imageSlider';
