@@ -11,13 +11,13 @@
 <br />
 <div align="center">
 
-  <h3 align="center">README 제목</h3>
+  <h3 align="center">설 과제 - 집꾸미기</h3>
 
   <p align="center">
-    <a href="https://github.com/othneildrew/Best-README-Template">Best-README-Template</a>을 참고하여 만들어 본 README 템플릿입니다. 확인하시고 의견 주시면 감사하겠습니다!
+    집꾸미기 API를 사용해 가구 정보 뷰어와 가구 이미지 슬라이더를 구현한 과제입니다.
     <br />
     <br />
-    <a href="https://hungry-meitner-18800a.netlify.app"><strong>배포 링크</strong></a>
+    <a href="http://wantedfirstweekmission1.s3-website.ap-northeast-2.amazonaws.com"><strong>배포 링크</strong></a>
   </p>
 </div>
 
@@ -28,7 +28,6 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#팀원-소개">팀원 소개</a></li> 
     <li><a href="#과제-소개">과제 소개</a></li>
     <li><a href="#구현한-기능">구현한 기능</a></li>
     <li>
@@ -39,37 +38,8 @@
       </ul>
     </li>
     <li><a href="#프로젝트-구조">프로젝트 </a></li>
-    <li><a href="#license">License</a></li>
   </ol>
 </details>
-
-<br>
-<br>
-
-<!--팀원 소개-->
-## 팀원 소개
-
-<table align="center">
-<tr>
-<td align="center"><a href="https://github.com/gml9812"><img src="https://avatars.githubusercontent.com/u/28294925?v=4" width="150px" /></a></td>
-<td align="center"><a href="https://github.com/seoysauce"><img src="https://avatars.githubusercontent.com/u/65898861?v=4" width="150px" /></a></td>
-<td align="center"><a href="https://github.com/Yummy-sk"><img src="https://avatars.githubusercontent.com/u/60822846?v=4" width="150px" /></a></td>
-<td align="center"><a href="https://github.com/jambottle"><img src="https://avatars.githubusercontent.com/u/72926450?v=4" width="150px" /></a></td>
-
-</tr>
-<tr>
-<td align="center"><b>👑 윤희준 (팀장)</b></td>
-<td align="center"><b>정서영</b></td>
-<td align="center"><b>염상권</b></td>
-<td align="center"><b>김재원</b></td>
-</tr>
-<tr>
-<td align="center"><b>FE Developer</b></td>
-<td align="center"><b>FE Developer</b></td>
-<td align="center"><b>FE Developer</b></td>
-<td align="center"><b>FE Developer</b></td>
-</tr>
-</table>
 
 <br>
 <hr>
@@ -78,16 +48,10 @@
 <!-- 과제 소개 -->
 ## 과제 소개
 
-간략한 과제 소개 및 jpg, gif가 들어갈 영역입니다.
+- 추가적으로 가구 이미지 슬라이더에 드래그 기능을 추가했습니다.
 
-- 과제 소개 1
+![adfasdf](https://user-images.githubusercontent.com/28294925/152394222-aec8e78d-ff3b-432d-94d9-c47b7ba0eb4b.gif)
 
-![slider](https://user-images.githubusercontent.com/28294925/150082839-44f592e6-bdaa-4081-9281-12075b2c60d0.gif)
-
-- 과제 소개 2
-
-
-![responsive](https://user-images.githubusercontent.com/28294925/150082899-efbb1c3d-fd02-4134-8948-05d14bcb28de.gif)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -98,15 +62,17 @@
 <!-- 구현한 기능 -->
 ## 구현한 기능
 
-구현한 기능 목록을 작성할 영역입니다. 
-
-- [x] 기능 1
-- [x] 기능 2
-  - [x] 세부기능 2-1 
-  - [x] 세부기능 2-2
-- [x] 기능 3
-  - [x] 세부기능 3-1
-  - [x] 세부기능 3-2
+- [x] 가구 정보 뷰어 구현
+  - [x] 돋보기 아이콘을 클릭하면 상품 정보 tool tip을 출력하고, 돋보기 아이콘을 닫기 아이콘으로 변경한다.
+  - [x] tool tip이 출력되는 상태에서 다른 돋보기를 클릭하면 노출되던 tool tip 대신 새로운 tool tip을 출력한다.
+  - [x] 배경 이미지를 클릭하면 노출되던 tool tip이 닫힌다.
+  - [x] 돋보기가 위치한 사분면에 따라 tool tip의 위치가 변한다. 
+- [x] 가구 이미지 슬라이더 구현
+  - [x] 가구 이미지를 클릭해 선택할 시 선택한 가구를 붉은색 테두리로 표시한다.
+  - [x] 선택한 가구 이미지를 다시 클릭하면 선택이 풀린다.
+  - [x] 슬라이더를 마우스로 드래그할 시 가구 이미지를 움직일 수 있다.
+  - [x] 할인율이 존재하는 가구의 경우 상단에 할인율을 표시한다.  
+- [x] 가구 정보 뷰어와 가구 이미지 슬라이더 간 선택된 가구를 공유한다.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -116,8 +82,6 @@
 
 <!-- 설치 및 실행 -->
 ## 설치 및 실행
-
-배포 링크가 동작하지 않을 시, local에서 프로젝트를 실행하는 방법을 작성할 영역입니다. 
 
 ### Prerequisites
 
@@ -150,17 +114,17 @@
 <!-- 프로젝트 구조 -->
 ## 프로젝트 구조
 
-프로젝트 구조를 작성할 영역입니다(Optional). 
-
 ```bash
 ├── public
 │   ├── index.html
+|   ├── data # 슬라이더 시연을 위한 mock data
 ├── src
-│   ├── components
-│   ├── hooks
-│   ├── constants
-│   └── utils
-└── some_more_file.xxx
+│   ├── components # Atomic Design Pattern을 적용한 컴포넌트
+│   ├── hooks # custom hook
+│   ├── constants # 상수
+│   └── utils # 유틸 함수
+    └── styles # 전역 스타일
+
 ``` 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -168,12 +132,3 @@
 <br>
 <hr>
 <br>
-
-<!-- LICENSE -->
-## License
-
-라이센스를 표시할 영역입니다. 
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
